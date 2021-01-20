@@ -58,6 +58,9 @@ class Dashboard extends Component {
                 <div className="card-body ">
                   <ChartistGraph data={dataSales} type="Line" />
                 </div>
+                <div className="card-body ">
+                  <ChartistGraph data={dataSales} type="Line" />
+                </div>
                 <div className="card-footer ">
                   <div className="legend">
                     <i className="fa fa-circle text-info"></i> Open
