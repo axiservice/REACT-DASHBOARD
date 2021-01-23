@@ -4,8 +4,8 @@ import ChartistGraph from 'react-chartist'
 class Dashboard extends Component {
   render() {
     let dataPie = {
-      labels: ["40%", "20%", "40%"],
-      series: [40, 20, 40]
+      labels: ["30%", "18%", "10%", "7%", "30%", "5%"],
+      series: [30, 18, 10, 7, 30, 5]
     }
     let dataSales = {
       labels: [
@@ -56,9 +56,13 @@ class Dashboard extends Component {
                   <ChartistGraph data={dataPie} type="Pie" />
                   <div className="legend">
                     <i className="fa fa-circle text-info"></i> Open
-                                        <i className="fa fa-circle text-danger"></i> Bounce
-                                        <i className="fa fa-circle text-warning"></i> Unsubscribe
-                                    </div>
+                    <i className="fa fa-circle text-danger"></i> Bounce
+                    <i className="fa fa-circle text-warning"></i> Unsubscribe
+                    <br></br>
+                    <i className="fa fa-circle text-color-a"></i> Error
+                    <i className="fa fa- text-color-b"></i> Resend
+                    <i className="fa fa-circle text-color-c"></i> Failed
+                  </div>
                   <hr />
                   <div className="stats">
                     <i className="fa fa-clock-o"></i> Campaign sent 2 days ago
