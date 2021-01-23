@@ -21,7 +21,24 @@ class Dashboard extends Component {
       series: [
         [287, 385, 490, 492, 554, 586, 698, 695],
         [67, 152, 143, 240, 287, 335, 435, 437],
-        [23, 113, 67, 108, 190, 239, 307, 308]
+        [23, 113, 67, 108, 190, 700, 307, 308]
+      ]
+    }
+    let dataSales2 = {
+      labels: [
+        "9:00AM",
+        "12:00AM",
+        "3:00PM",
+        "6:00PM",
+        "9:00PM",
+        "12:00PM",
+        "3:00AM",
+        "6:00AM"
+      ],
+      series: [
+        [287, 985, 490, 492, 754, 586, 698, 695],
+        [67, 152, 943, 740, 287, 335, 435, 437],
+        [23, 913, 67, 108, 190, 700, 307, 308]
       ]
     }
     return (
@@ -59,7 +76,7 @@ class Dashboard extends Component {
                   <ChartistGraph data={dataSales} type="Line" />
                 </div>
                 <div className="card-body ">
-                  <ChartistGraph data={dataSales} type="Line" />
+                  <ChartistGraph data={dataSales2} type="Line" />
                 </div>
                 <div className="card-footer ">
                   <div className="legend">
