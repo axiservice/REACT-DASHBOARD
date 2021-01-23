@@ -70,6 +70,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 
+# Configure fresh npm environment
+
+### `npm cache clean --force`
+### `rm -rf node_modules package-lock.json`
+### `npm install`
+
 # Install dependencies
 
 Since our dashboard will have routes and charts, install the following dependencies:
@@ -77,3 +83,12 @@ Since our dashboard will have routes and charts, install the following dependenc
 ### `npm i react-router-dom --save`
 ### `npm i chartist --save`
 ### `npm i react-chartist --save`
+
+
+# Run app on locally
+
+First confirm if your project is running well by executing this command: 
+
+### `npm start`
+
+You can access it on http://localhost:3000/
