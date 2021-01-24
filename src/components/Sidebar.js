@@ -24,6 +24,18 @@ class Sidebar extends Component {
                 <p>User Profile</p>
               </NavLink>
             </li>
+            <li className="nav-item">
+              <NavLink className="nav-link" to='/dashboard'>
+                <i className="nc-icon nc-camera-20"></i>
+                <p>Allert Signal</p>
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink className="nav-link" to='/profile'>
+                <i className="nc-icon nc-button-play"></i>
+                <p>System Properties</p>
+              </NavLink>
+            </li>
 
           </ul>
         </div>
